@@ -9,6 +9,29 @@
 - 基础栏目：首页、文章、标签、分类、关于
 - 3 套可切换配色方案
 - SEO 基础项（robots、sitemap、Open Graph 默认图、Search Console 与 GA4 配置位）
+- 核心 Agent Skills（选题 -> 写作 -> 质检 -> 发布框架）
+
+## 1.1 已迁移的核心 Agent Skills
+
+路径：`.agents/skills/`
+
+- `blog-seo-keyword-select`：关键词与选题扩展
+- `blog-seo-content-create`：正文写作（观点、结构、语气）
+- `blog-seo-content-check`：文章发布前量化检查
+- `generate-blog-workflow`：文件命名、frontmatter、多语言与发布流程
+- `scripts/`：上述检查流程所需脚本（含 `article_seo_eval.py`）
+
+推荐调用顺序：
+
+1. `blog-seo-keyword-select`
+2. `blog-seo-content-create`
+3. `blog-seo-content-check`
+4. `generate-blog-workflow`
+
+入口文档：
+
+- `CLAUDE.md`：技能索引与默认工作流（给 agent 用）
+- `AGENTS.md`：指向 `CLAUDE.md`（入口提示）
 
 ## 2. 快速启动
 

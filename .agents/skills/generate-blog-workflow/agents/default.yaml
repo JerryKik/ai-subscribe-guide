@@ -1,0 +1,19 @@
+interface:
+  display_name: "generate-blog-workflow"
+  short_description: "Create, localize, refresh, and review blog posts"
+  default_prompt: |
+    Use $generate-blog-workflow to create, revise, localize, or review blog content.
+    Treat SEO quality as a hard release gate: final SEO score must be 100/100 before output is considered complete.
+    You must load and follow the skill references, especially seo_frontmatter.md and create_update.md.
+    When writing or revising a post, run this mandatory SEO checklist:
+    1) Search intent match is explicit in title, intro, and section structure.
+    2) One primary keyword cluster + supporting entities; no stuffing.
+    3) Title and description are within locale hard caps.
+    4) Heading hierarchy is clean (single h1 from template, body starts at h2).
+    5) External links are useful and use nofollow when applicable.
+    6) Internal links are relevant and descriptive.
+    7) Images (if any) have meaningful alt text.
+    8) Canonical/hreflang behavior remains valid for multilingual pages.
+    9) Claims and freshness markers are verified and date-synced.
+    10) References section exists when sources are cited.
+    If any item fails, revise until all items pass and report SEO score as 100/100 with a brief pass/fail checklist.
