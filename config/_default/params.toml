@@ -1,0 +1,100 @@
+colorScheme = "chatgptnews"
+defaultAppearance = "light"
+autoSwitchAppearance = true
+
+defaultSocialImage = "images/og-default.webp"
+
+
+enableA11y = false
+enableSearch = false
+enableCodeCopy = false
+enableStructuredBreadcrumbs = true
+smartTOC = true
+smartTOCHideUnfocusedChildren = false
+replyByEmail = false
+mainSections = ["articles"]
+
+disableImageOptimization = false
+disableImageOptimizationMD = false
+disableTextInHeader = false
+hotlinkFeatureImage = true
+
+fingerprintAlgorithm = "sha512"
+
+[header]
+layout = "basic"
+
+[footer]
+showMenu = false
+showCopyright = true
+showThemeAttribution = false
+showAppearanceSwitcher = true
+showScrollToTop = true
+
+[homepage]
+layout = "hero"
+homepageImage = ""
+showRecent = true
+showRecentItems = 6
+cardView = true
+cardViewScreenWidth = false
+
+[article]
+showDate = true
+showViews = false
+showLikes = false
+showDateOnlyInArticle = false
+showDateUpdated = true
+showAuthor = false
+showHero = true
+heroStyle = "basic"
+showBreadcrumbs = true
+showDraftLabel = false
+showEdit = false
+editAppendPath = true
+seriesOpened = false
+showHeadingAnchors = true
+showPagination = false
+invertPagination = false
+showReadingTime = false
+showTableOfContents = true
+showTaxonomies = true
+showCategoryOnly = false
+showAuthorsBadges = false
+showWordCount = false
+showZenMode = false
+sharingLinks = ["reddit", "twitter", "linkedin", "email"]
+
+[list]
+showHero = true
+showBreadcrumbs = true
+showSummary = true
+showViews = false
+showLikes = false
+showTableOfContents = true
+showCards = true
+orderByWeight = false
+groupByYear = true
+cardView = true
+cardViewScreenWidth = false
+constrainItemsWidth = true
+
+[sitemap]
+excludedKinds = []
+
+[verification]
+# Google Search Console: HTML tag verification
+# Paste the `content="..."` value from:
+# Search Console → Ownership verification → HTML tag
+google = ""
+
+# Optional site verifications
+# bing = ""
+# pinterest = ""
+# yandex = ""
+# fediverse = ""
+
+[analytics]
+  [analytics.ga4]
+  # Google Analytics 4 Measurement ID, e.g. "G-XXXXXXXXXX"
+  id = ""

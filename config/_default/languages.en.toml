@@ -1,0 +1,17 @@
+languageCode = "en"
+languageName = "English"
+weight = 2
+title = "Your Site Name"
+
+[params]
+displayName = "EN"
+isoCode = "en"
+rtl = false
+dateFormat = "2 January 2006"
+description = "A fast, bilingual content site template built with Hugo and Blowfish."
+
+[params.author]
+name = "Your Team"
+headline = "Publish clear and useful content"
+bio = "Replace this with your brand intro."
+links = [{ github = "https://github.com/your-org/your-repo" }]
