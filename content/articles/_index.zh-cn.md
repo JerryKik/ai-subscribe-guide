@@ -1,6 +1,6 @@
 ---
 title: "文章"
-description: "这里汇总你发布的全部文章。"
+description: "收录 ChatGPT、Claude、Gemini、Midjourney、Sora 等订阅与支付教程。"
 ---
 
-该栏目展示你的网站内容更新。
+这里按时间展示最新攻略，优先关注每篇文章的“最后更新日期”。

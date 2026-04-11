@@ -1,11 +1,12 @@
-defaultContentLanguage = "en"
-defaultContentLanguageInSubdir = true
+defaultContentLanguage = "zh-cn"
+defaultContentLanguageInSubdir = false
+disableLanguages = ["en"]
 enableRobotsTXT = true
 enableEmoji = true
 summaryLength = 0
 
 [pagination]
-pagerSize = 10
+pagerSize = 12
 
 [imaging]
 anchor = "Center"

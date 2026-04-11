@@ -2,3 +2,6 @@
 public/
 resources/
 .hugo_build.lock
+
+# Hugo Modules：`hugo mod vendor` 生成的主题/模块副本，勿提交（构建时由 module 拉取）
+_vendor/

@@ -4,26 +4,46 @@ pageRef = "/"
 weight = 10
 
 [[main]]
-name = "文章"
-pageRef = "/articles"
+name = "分类"
+pageRef = "/categories"
 weight = 20
 
 [[main]]
 name = "标签"
 pageRef = "/tags"
-weight = 25
+weight = 30
 
 [[main]]
-name = "分类"
-pageRef = "/categories"
-weight = 26
-
-[[main]]
-name = "关于我们"
-pageRef = "/about"
+name = "教程"
+url = "/categories/教程/"
 weight = 40
 
 [[main]]
-name = "GitHub"
-url = "https://github.com/your-org/your-repo"
+name = "工具"
+url = "/categories/工具/"
 weight = 50
+
+[[main]]
+name = "支付"
+url = "/categories/支付/"
+weight = 60
+
+[[main]]
+name = "合租"
+url = "/categories/合租/"
+weight = 70
+
+[[main]]
+name = "关于我"
+pageRef = "/about"
+weight = 80
+
+[[main]]
+name = "免责声明"
+pageRef = "/disclaimer"
+weight = 90
+
+[[main]]
+name = "友情链接"
+pageRef = "/links"
+weight = 100

@@ -6,26 +6,13 @@ body {
 
 body {
   position: relative;
-  background-image:
-    radial-gradient(1200px 700px at 8% -12%, rgba(37, 99, 235, 0.14), transparent 62%),
-    radial-gradient(900px 560px at 100% 0%, rgba(59, 130, 246, 0.11), transparent 58%),
-    radial-gradient(900px 500px at 50% 112%, rgba(30, 64, 175, 0.08), transparent 60%),
-    radial-gradient(600px 300px at 52% 8%, rgba(56, 189, 248, 0.08), transparent 70%),
-    linear-gradient(rgba(37, 99, 235, 0.04) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(37, 99, 235, 0.04) 1px, transparent 1px);
-  background-size: auto, auto, auto, auto, 32px 32px, 32px 32px;
-  background-attachment: fixed;
+  background: rgb(var(--color-neutral-50));
+  color: rgb(var(--color-neutral-900));
 }
 
 html.dark body {
-  background-image:
-    radial-gradient(1100px 640px at 6% -10%, rgba(59, 130, 246, 0.18), transparent 62%),
-    radial-gradient(900px 520px at 96% -2%, rgba(96, 165, 250, 0.15), transparent 58%),
-    radial-gradient(880px 520px at 50% 112%, rgba(30, 64, 175, 0.18), transparent 62%),
-    radial-gradient(640px 340px at 52% 6%, rgba(125, 211, 252, 0.1), transparent 72%),
-    linear-gradient(rgba(59, 130, 246, 0.08) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(59, 130, 246, 0.08) 1px, transparent 1px);
-  background-size: auto, auto, auto, auto, 34px 34px, 34px 34px;
+  background: rgb(var(--color-neutral-50));
+  color: rgb(var(--color-neutral-900));
 }
 
 /* Animated top scanline to add subtle AI-console feeling */
@@ -35,15 +22,8 @@ body::before {
   inset: 0;
   pointer-events: none;
   z-index: -1;
-  background:
-    repeating-linear-gradient(
-      to bottom,
-      rgba(59, 130, 246, 0.025) 0,
-      rgba(59, 130, 246, 0.025) 1px,
-      transparent 1px,
-      transparent 6px
-    );
-  opacity: 0.7;
+  background: none;
+  opacity: 0;
 }
 
 /* Floating bokeh dots for depth; kept low-opacity for readability */
@@ -59,7 +39,8 @@ body::after {
     radial-gradient(circle at 24% 62%, rgba(56, 189, 248, 0.12) 0 2px, transparent 3px),
     radial-gradient(circle at 88% 72%, rgba(59, 130, 246, 0.14) 0 2px, transparent 3px),
     radial-gradient(circle at 58% 44%, rgba(147, 197, 253, 0.12) 0 2px, transparent 3px);
-  animation: aiFloat 26s ease-in-out infinite alternate;
+  opacity: 0;
+  animation: none;
 }
 
 @keyframes aiFloat {
@@ -102,3 +83,161 @@ body::after {
   transform: translateY(0);
   opacity: 0.92;
 }
+
+.home-hero {
+  margin: 0 0 2rem;
+  padding: 1.25rem;
+  border-radius: 0.5rem;
+  border: 1px solid rgba(var(--color-primary-500), 0.35);
+  background: linear-gradient(
+    135deg,
+    rgba(var(--color-primary-50), 1) 0%,
+    rgba(var(--color-secondary-50), 1) 100%
+  );
+  box-shadow: none;
+  color: rgb(var(--color-neutral-900));
+}
+
+.dark .home-hero {
+  border-color: rgba(var(--color-primary-500), 0.35);
+  background: linear-gradient(
+    135deg,
+    rgba(var(--color-primary-50), 1) 0%,
+    rgba(var(--color-secondary-50), 1) 100%
+  );
+  box-shadow: none;
+  color: rgb(var(--color-neutral-900));
+}
+
+.home-hero h2 {
+  margin-top: 0;
+  margin-bottom: 0.75rem;
+  font-size: clamp(1.35rem, 2.2vw, 1.95rem);
+  color: rgb(var(--color-neutral-900));
+}
+
+.dark .home-hero h2 {
+  color: rgb(var(--color-neutral-900));
+}
+
+.home-hero p {
+  margin: 0.5rem 0;
+  color: rgb(var(--color-neutral-700));
+}
+
+.dark .home-hero p {
+  color: rgb(var(--color-neutral-700));
+}
+
+.home-badges {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-top: 0.9rem;
+}
+
+.home-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.3rem;
+  padding: 0.35rem 0.72rem;
+  border-radius: 999px;
+  border: 1px solid rgba(var(--color-primary-500), 0.35);
+  background: rgba(var(--color-primary-100), 1);
+  color: rgb(var(--color-primary-700));
+  font-size: 0.82rem;
+  font-weight: 600;
+}
+
+.dark .home-badge {
+  border-color: rgba(var(--color-primary-500), 0.35);
+  background: rgba(var(--color-primary-100), 1);
+  color: rgb(var(--color-primary-700));
+}
+
+.home-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 0.75rem;
+  margin: 1rem 0 1.4rem;
+}
+
+.home-card {
+  display: block;
+  border-radius: 0.5rem;
+  border: 1px solid rgba(var(--color-neutral-900), 0.16);
+  padding: 1rem;
+  text-decoration: none;
+  background: rgb(var(--color-neutral-50));
+  transition: border-color 0.15s ease;
+  color: rgb(var(--color-neutral-900));
+}
+
+.home-card:hover {
+  border-color: rgba(var(--color-primary-500), 0.75);
+}
+
+.dark .home-card {
+  background: rgb(var(--color-neutral-50));
+  border-color: rgba(var(--color-neutral-900), 0.16);
+  color: rgb(var(--color-neutral-900));
+}
+
+.dark .home-card:hover {
+  border-color: rgba(var(--color-primary-500), 0.55);
+  box-shadow: none;
+}
+
+.home-card h3 {
+  margin-top: 0;
+  margin-bottom: 0.4rem;
+  font-size: 1rem;
+  color: inherit;
+}
+
+.home-card p {
+  margin: 0;
+  font-size: 0.9rem;
+  opacity: 1;
+  color: inherit;
+}
+
+.home-quick-links {
+  margin: 0 0 1.25rem;
+  padding-left: 1rem;
+}
+
+.home-quick-links li {
+  margin: 0.35rem 0;
+}
+
+.home-quick-links a {
+  color: rgb(var(--color-neutral-900));
+  font-weight: 600;
+}
+
+.dark .home-quick-links a {
+  color: rgb(var(--color-neutral-900));
+}
+
+.home-note {
+  border-left: 3px solid rgba(var(--color-primary-500), 0.85);
+  background: linear-gradient(
+    90deg,
+    rgba(var(--color-primary-100), 1) 0%,
+    rgba(var(--color-secondary-50), 1) 100%
+  );
+  padding: 0.7rem 0.85rem;
+  border-radius: 0.25rem;
+  margin: 1rem 0 1.5rem;
+}
+
+.dark .home-note {
+  background: linear-gradient(
+    90deg,
+    rgba(var(--color-primary-100), 1) 0%,
+    rgba(var(--color-secondary-50), 1) 100%
+  );
+  border-left-color: rgba(var(--color-primary-500), 0.85);
+}
+

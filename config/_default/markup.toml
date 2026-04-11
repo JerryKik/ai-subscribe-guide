@@ -10,6 +10,11 @@
 
 [highlight]
   noClasses = false
+  lineNos = true
+  lineNumbersInTable = false
+  codeFences = true
+  guessSyntax = true
+  style = "github-dark"
 
 [tableOfContents]
   startLevel = 2

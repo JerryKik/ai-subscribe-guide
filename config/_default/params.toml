@@ -1,13 +1,15 @@
-colorScheme = "chatgptnews"
+# chatgptnews = 蓝色调
+# guideclean = 绿色调
+colorScheme = "guideclean"
 defaultAppearance = "light"
-autoSwitchAppearance = true
+autoSwitchAppearance = false
 
 defaultSocialImage = "images/og-default.webp"
 
 
 enableA11y = false
-enableSearch = false
-enableCodeCopy = false
+enableSearch = true
+enableCodeCopy = true
 enableStructuredBreadcrumbs = true
 smartTOC = true
 smartTOCHideUnfocusedChildren = false
@@ -28,7 +30,7 @@ layout = "basic"
 showMenu = false
 showCopyright = true
 showThemeAttribution = false
-showAppearanceSwitcher = true
+showAppearanceSwitcher = false
 showScrollToTop = true
 
 [homepage]
@@ -56,14 +58,14 @@ seriesOpened = false
 showHeadingAnchors = true
 showPagination = false
 invertPagination = false
-showReadingTime = false
+showReadingTime = true
 showTableOfContents = true
 showTaxonomies = true
 showCategoryOnly = false
 showAuthorsBadges = false
 showWordCount = false
 showZenMode = false
-sharingLinks = ["reddit", "twitter", "linkedin", "email"]
+sharingLinks = ["twitter", "email"]
 
 [list]
 showHero = true

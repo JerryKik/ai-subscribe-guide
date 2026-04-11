@@ -1,0 +1,32 @@
+{{ $leftTitle := .Get "leftTitle" | default "方案 A" }}
+{{ $rightTitle := .Get "rightTitle" | default "方案 B" }}
+{{ $leftPros := split (.Get "leftPros" | default "") "|" }}
+{{ $rightPros := split (.Get "rightPros" | default "") "|" }}
+<div class="my-6 overflow-x-auto">
+  <table>
+    <thead>
+      <tr>
+        <th>{{ $leftTitle }}</th>
+        <th>{{ $rightTitle }}</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>
+          <ul>
+            {{ range $leftPros }}
+              {{ if ne . "" }}<li>{{ . }}</li>{{ end }}
+            {{ end }}
+          </ul>
+        </td>
+        <td>
+          <ul>
+            {{ range $rightPros }}
+              {{ if ne . "" }}<li>{{ . }}</li>{{ end }}
+            {{ end }}
+          </ul>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
