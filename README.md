@@ -1,17 +1,17 @@
-# Content Site Template (Hugo + Blowfish)
+# AI 订阅攻略站（Hugo + Blowfish）
 
-一个可直接复用的内容网站模板，仅保留核心主题配置与基础内容骨架，适合快速搭建中英双语内容站。
+面向国内用户的 AI 服务订阅与支付类内容站源码，基于 Hugo 与 Blowfish 主题，并配套 Agent Skills（选题 → 写作 → 质检 → 发布流程）。
 
-## 1. 模板包含什么
+## 1. 项目包含什么
 
-- Hugo + Blowfish（通过 Hugo Module 引入）
-- 双语配置（`en` / `zh-cn`）
-- 基础栏目：首页、文章、标签、分类、关于
-- 3 套可切换配色方案
+- Hugo Extended + Blowfish（通过 Hugo Module 引入）
+- 当前默认语言为 **简体中文**（`zh-cn`；配置中已禁用 `en`，可按需重新启用）
+- 内容结构：文章、标签、分类、关于、免责声明等（见 `content/`）
+- 多套可切换配色方案（见 `assets/css/schemes/`）
 - SEO 基础项（robots、sitemap、Open Graph 默认图、Search Console 与 GA4 配置位）
-- 核心 Agent Skills（选题 -> 写作 -> 质检 -> 发布框架）
+- Agent Skills：`.agents/skills/`（关键词、写作、质检、`generate-blog-workflow` 与脚本）
 
-## 1.1 已迁移的核心 Agent Skills
+### 1.1 Agent Skills 入口
 
 路径：`.agents/skills/`
 
@@ -19,28 +19,25 @@
 - `blog-seo-content-create`：正文写作（观点、结构、语气）
 - `blog-seo-content-check`：文章发布前量化检查
 - `generate-blog-workflow`：文件命名、frontmatter、多语言与发布流程
-- `scripts/`：上述检查流程所需脚本（含 `article_seo_eval.py`）
+- `scripts/`：检查流程脚本（含 `article_seo_eval.py`）
 
-推荐调用顺序：
+推荐顺序：`blog-seo-keyword-select` → `blog-seo-content-create` → `blog-seo-content-check` → `generate-blog-workflow`。
 
-1. `blog-seo-keyword-select`
-2. `blog-seo-content-create`
-3. `blog-seo-content-check`
-4. `generate-blog-workflow`
+说明文档：
 
-入口文档：
+- `CLAUDE.md`：技能索引与默认工作流
+- `AGENTS.md`：指向 `CLAUDE.md`
 
-- `CLAUDE.md`：技能索引与默认工作流（给 agent 用）
-- `AGENTS.md`：指向 `CLAUDE.md`（入口提示）
+## 2. 本地运行
 
-## 2. 快速启动
+在项目根目录执行：
 
 ```bash
-cd /Users/zhangjane/home_work_space/content-site-template
+cd /path/to/ai-subscribe-guide
 hugo server
 ```
 
-首次建议先检查环境：
+首次建议确认环境（**Hugo Extended 建议与 CI 一致：0.159.1**，见 `.github/workflows/hugo.yml` 中的 `HUGO_VERSION`）：
 
 ```bash
 go version
@@ -48,69 +45,49 @@ hugo version
 hugo mod graph
 ```
 
-## 3. 必改配置（上线前）
+## 3. 上线前必改配置
 
-### 3.1 站点地址
+### 3.1 站点地址（baseURL）
 
-编辑 `hugo.toml`：
+编辑**仓库根目录**的 `hugo.toml`（目前仅含 `baseURL`）：
 
 ```toml
-baseURL = "https://example.com/"
+baseURL = "https://你的域名/"
 ```
 
-改成你的正式域名，如 `https://docs.yourdomain.com/`。
+若使用 **GitHub Pages** 默认地址，一般为 `https://<用户名>.github.io/<仓库名>/`（注意末尾斜杠与路径是否与仓库名一致）。推送后也可在 GitHub 仓库 **Settings → Pages** 中查看实际站点 URL，并与 `baseURL` 对齐。
 
-### 3.2 站点名称与作者信息
+### 3.2 站点名称与作者
 
-编辑：
+编辑 `config/_default/languages.zh-cn.toml`：
 
-- `config/_default/languages.en.toml`
-- `config/_default/languages.zh-cn.toml`
+- `title`、`description`
+- `[params.author]` 下的 `headline`、`bio`（以及按需取消注释 `name`、`links`）
 
-重点字段：
-
-- `title`
-- `description`
-- `[params.author]` 下的 `name`、`headline`、`bio`、`links`
+若启用英文，再维护 `languages.en.toml` 并与 `config/_default/hugo.toml` 中的 `disableLanguages` 配合调整。
 
 ### 3.3 导航菜单
 
-编辑：
+主要编辑 `config/_default/menus.zh-cn.toml`（若启用英文则同时维护 `menus.en.toml`）。
 
-- `config/_default/menus.en.toml`
-- `config/_default/menus.zh-cn.toml`
+## 4. 主题与配色
 
-可按你的内容结构增删菜单项。
-
-## 4. 主题与颜色配置
-
-主题主配置在 `config/_default/params.toml`。
-
-### 4.1 切换配色方案
+主题参数在 `config/_default/params.toml`。当前默认：
 
 ```toml
-colorScheme = "chatgptnews"
+colorScheme = "guideclean"
 ```
 
-可选值：
+可选配色（对应 `assets/css/schemes/` 下的文件）包括但不限于：
 
-- `chatgptnews`
-- `chatgptnews-dark`
-- `chatgptnews-soft`
+- `guideclean`、`guideclean-dark`、`guideclean-soft`
+- `chatgptnews`、`chatgptnews-dark`、`chatgptnews-soft`
 
-对应文件：
+自定义样式可编辑 `assets/css/custom.css`。
 
-- `assets/css/schemes/chatgptnews.css`
-- `assets/css/schemes/chatgptnews-dark.css`
-- `assets/css/schemes/chatgptnews-soft.css`
+### 4.1 首页布局
 
-### 4.2 自定义主题细节
-
-编辑 `assets/css/custom.css` 可覆盖默认视觉效果（背景、按钮、卡片细节等）。
-
-### 4.3 首页布局
-
-编辑 `config/_default/params.toml` 的 `[homepage]`：
+在 `config/_default/params.toml` 的 `[homepage]` 中调整，例如：
 
 ```toml
 [homepage]
@@ -124,32 +101,32 @@ cardView = true
 
 ## 5. SEO 配置
 
-## 5.1 全站基础 SEO
+### 5.1 全站基础 SEO
 
 编辑 `config/_default/hugo.toml`：
 
-- `enableRobotsTXT = true`
-- `[sitemap]`（`changefreq`、`priority`）
-- `[outputs] home = ["HTML", "RSS", "JSON"]`
+- `enableRobotsTXT`
+- `[sitemap]`
+- `[outputs]` 中 `home` 包含 `HTML`、`RSS`、`JSON` 等
 
-## 5.2 页面级 SEO（文章 Front Matter）
+### 5.2 文章 Front Matter
 
-每篇文章建议至少包含：
+建议每篇文章至少包含：
 
 ```yaml
 ---
-title: "Your article title"
+title: "文章标题"
 date: 2026-04-10T12:00:00+08:00
-description: "Meta description for search results"
-summary: "Short summary shown in list/card"
-tags: ["tag-1", "tag-2"]
-categories: ["category-1"]
+description: "搜索结果摘要"
+summary: "列表/卡片摘要"
+tags: ["标签一", "标签二"]
+categories: ["分类"]
 ---
 ```
 
-## 5.3 Search Console 与 Analytics
+### 5.3 Search Console 与 Analytics
 
-编辑 `config/_default/params.toml`：
+在 `config/_default/params.toml` 中配置：
 
 ```toml
 [verification]
@@ -160,18 +137,11 @@ google = ""
   id = ""
 ```
 
-填入你的 Search Console 验证码与 GA4 Measurement ID。
+## 6. 新增文章
 
-## 6. 新增文章（双语）
+当前以中文为主，文章可放在 `content/articles/`，例如 `某主题.zh-cn.md`。若启用多语言，可为同一主题维护多份语言文件并在 frontmatter 中用 `translationKey` 关联（详见 `generate-blog-workflow` 技能）。
 
-建议同一主题建立两篇：
-
-- `content/articles/your-topic.en.md`
-- `content/articles/your-topic.zh-cn.md`
-
-并在 front matter 中保持一致的结构和 SEO 字段。
-
-## 7. 构建与发布
+## 7. 构建产物
 
 本地构建：
 
@@ -179,35 +149,54 @@ google = ""
 hugo
 ```
 
-产物在 `public/`。
+静态站点输出目录为 `public/`。
 
-部署可选：
+## 8. GitHub Pages 自动部署
 
-- GitHub Pages（推荐）
-- Netlify / Vercel
-- 自托管静态服务器
+本仓库提供与参考项目同结构的 GitHub Actions 工作流：`.github/workflows/hugo.yml`（构建与缓存步骤与 `peaceiris/actions-hugo`、`actions/configure-pages`、`actions/deploy-pages` 标准 Pages 流程一致）。
 
-## 8. 推送到 GitHub（新仓库）
+**首次启用步骤：**
+
+1. 将代码推送到 GitHub 的 `main` 分支。
+2. 打开仓库 **Settings → Pages**。
+3. **Build and deployment** 的 **Source** 选择 **GitHub Actions**（不要选「Deploy from a branch」的旧方式，除非你有意自行维护）。
+4. 在 **Actions** 中确认 **Deploy Hugo site to Pages** 运行成功；完成后 Pages 设置页会显示站点 URL。
+
+工作流要点：
+
+- 使用 Hugo Extended **0.159.1**（与 `HUGO_VERSION` 一致；升级时同步修改 `.github/workflows/hugo.yml` 与本文说明，并在本地验证）。
+- 构建命令：`hugo --gc --minify`，并使用 `configure-pages` 输出的 `base_url` 作为 `--baseURL`，与 GitHub Pages 域名一致。
+- 缓存 `~/.cache/hugo_cache` 与 `~/go/pkg/mod`，依赖 `go.sum` 与 `config/_default/module.toml` 的哈希。
+
+也可将同一套静态文件部署到 Netlify、Vercel 或任意静态托管；只需在对应平台配置 `hugo` 构建命令与 `public` 输出目录即可。
+
+## 9. 推送到 GitHub（新仓库）
 
 ```bash
-cd /Users/zhangjane/home_work_space/content-site-template
+cd /path/to/ai-subscribe-guide
 git init
 git add .
-git commit -m "init: content site template"
+git commit -m "init: ai-subscribe-guide"
 git branch -M main
-git remote add origin <your-repo-url>
+git remote add origin <你的仓库地址>
 git push -u origin main
 ```
 
-## 9. 常见问题
+按需将 `go.mod` 第一行的 `module` 路径改为你的模块路径（不影响 GitHub Pages 部署，但与 Go module 缓存标识相关）。
 
-### Blowfish 模块加载失败
+## 10. 常见问题
 
-确保 `config/_default/module.toml` 为：
+### Blowfish 模块拉取失败
+
+确认 `config/_default/module.toml` 包含：
 
 ```toml
 [[imports]]
 path = "github.com/nunocoracao/blowfish/v2"
 ```
 
-并且未在 `hugo.toml` 中设置 `theme = "blowfish"`（避免被当作本地主题目录）。
+且不要在根 `hugo.toml` 中设置 `theme = "blowfish"`（避免被当作本地主题目录）。网络受限时可配置 Go 代理或使用 vendor（按 Hugo 文档操作）。
+
+### 本地与 CI 的 Hugo 版本不一致
+
+以 `.github/workflows/hugo.yml` 中的 `HUGO_VERSION`（当前 **0.159.1**）为准，本地请使用相同的 **Hugo Extended** 版本，避免构建差异。
