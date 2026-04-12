@@ -1,6 +1,7 @@
 ---
 title: "关于我"
 description: "站点定位、经验背景与内容更新原则。"
+layout: single
 ---
 
 你好，我是 JerryKik，长期关注 AI 工具订阅、支付方式与账号使用体验。
