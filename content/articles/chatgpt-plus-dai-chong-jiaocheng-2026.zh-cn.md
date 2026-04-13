@@ -26,34 +26,49 @@ showDateUpdated: true
 
 价格受汇率、平台成本、优惠码影响会有浮动，建议下单前输入优惠码实时查看。长期套餐（3 个月 / 12 个月）通常更划算，平均每月能省 30–50 元。以下按性价比从高到低排序（优先推荐有 ICP 备案、自动化充值、全程质保的平台）：
 
-### [FamilyPro](https://familypro.io/cn/products/chatgpt-top-up?invite=HJa89c5c&promo=qyyx)（推荐指数最高）
+### [FamilyPro](https://familypro.io/cn/products/chatgpt-top-up?invite=HJa89c5c&promo=qyyx)（推荐指数: 🌟🌟🌟🌟🌟）
 
-提供 ChatGPT Plus 充值服务（微信支付直充自己的账号）。
+![FamilyPro recharge guide](/images/chatgpt/familypro-recharge-guide.png)
 
 - **1 个月**：$25.99/月（折合人民币约 177.46 元，视汇率）。
-- **订阅**：立减-$6.99，$19.00/月（折合人民币约 129 元，视汇率）
+- **订阅**：$13.00/月（折合人民币约 88.76 元，视汇率）
 
 **特点**：自动化交付，即时到账，无封号风险，支持质保。支持微信、支付宝支付，国内信用卡等多种支付（若无账号也可直接买现成 Plus 账号）。
 
-### [星际放映厅](https://www.naifeistation.com/index/buy?id=241)
+### [Gamsgo](https://www.gamsgo.com/)（推荐指数: 🌟🌟🌟🌟🌟）
 
-支持给自己的账号代充 ChatGPT Plus（可用 GPT-5.4 等最新模型）。
+![familypro recharge guide](/images/chatgpt/gamsgo-chatgpt-recharge-guide.png)
+
+- **1 个月**：$14.99/月（折合人民币约 102.35 元，视汇率）。
+  ![gamsgo recharge chatgpt 1 month price](/images/chatgpt/gamsgo-chatgpt-1-month-price.png)
+- **订阅**：$9.99/月（折合人民币约 68.21 元，视汇率）
+  ![gamsgo gamsgo chatgpt subscription price](/images/chatgpt/gamsgo-chatgpt-subscription-price.png)
+
+**特点**：自动化交付，即时到账。支持微信、支付宝支付，国内信用卡等多种支付（若无账号也可直接买现成 Plus 账号）。
+
+> 注意：充值之后是不可以退款。需要看清楚！
+
+### [星际放映厅](https://www.naifeistation.com/index/buy?id=241)（推荐指数: 🌟🌟🌟🌟）
+
+![naifeistation chatgpt price](/images/chatgpt/naifeistation-chatgpt-price.png)
 
 - **1 个月**：原价约 162 元/月
-- **12 个月**：原价 129 元/月
+- **12 个月**：换算原价 129 元/月
 
 **特点**：自动化 + 人工双模式、全程质保、可开发票、现号秒发支持（若无账号也可直接买现成 Plus 账号）。平台有备案，服务稳定，用户量大。适合长期用户，直接选年付最省。
 
-### [银河录像局](https://nf.video/K2wPi)
+### [银河录像局](https://nf.video/K2wPi)（推荐指数: 🌟🌟🌟）
 
-支持 ChatGPT Plus 代充值（自己的账号升级，也可买独立会员账号）。
+![nf video chatgpt price](/images/chatgpt/nf-video-chatgpt-price.png)
 
 - **1 个月**：原价 172 元。
 - **12 个月**：平均 **约 133 元/月**。
 
 **特点**：自动化充值系统强，成功率高，支持工单 / 客服售后，价格适中，有 ICP 备案和经营许可证。适合想同时用其他 AI 工具的用户。
 
-### [环球巴士](https://universalbus.cn/?s=WCMUWowiQ6)
+### [环球巴士](https://universalbus.cn/?s=WCMUWowiQ6)（推荐指数: 🌟🌟）
+
+![universalbus chatgpt price](/images/chatgpt/universalbus-chatgpt-price.png)
 
 支持原生 ChatGPT Plus 代充。
 
