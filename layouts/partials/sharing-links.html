@@ -1,0 +1,57 @@
+{{ with .Params.sharingLinks | default (.Site.Params.article.sharingLinks | default false) }}
+  {{ $links := hugo.Data.sharing }}
+  {{ $shareURL := $.Permalink | urlquery }}
+  {{ $shareTitle := $.Title | urlquery }}
+  {{ $shareDescRaw := $.Params.description | default $.Summary | plainify | truncate 140 }}
+  {{ $shareDesc := $shareDescRaw | urlquery }}
+  {{ $shareSource := $.Site.BaseURL | urlquery }}
+  <section class="flex flex-row flex-wrap justify-center pt-4 text-xl">
+    {{ range . }}
+      {{ with index $links . }}
+        {{ $isEmail := eq .icon "email" }}
+        <a
+          class="{{ cond $isEmail "email-link" "" }} m-1 rounded bg-neutral-300 p-1.5 text-neutral-700 hover:bg-primary-500 hover:text-neutral dark:bg-neutral-700 dark:text-neutral-300 dark:hover:bg-primary-400 dark:hover:text-neutral-800"
+          target="_blank"
+          href="{{ cond $isEmail "#" (printf .url $.Permalink $.Title | safeURL) }}"
+          {{ if $isEmail }}
+            data-email="{{ $.Site.Params.Author.email | base64Encode }}"
+            data-subject="{{ replace (printf "Reply to %s" $.Title) "\"" "'" }}"
+          {{ end }}
+          title="{{ i18n .title }}"
+          aria-label="{{ i18n .title }}">
+          {{ partial "icon.html" .icon }}
+        </a>
+      {{ end }}
+    {{ end }}
+  </section>
+
+  <div
+    class="share-wrapper">
+    <a
+      href="{{ printf "https://service.weibo.com/share/share.php?url=%s&title=%s" $shareURL $shareTitle | safeURL }}"
+      target="_blank"
+      rel="noopener noreferrer"
+      title="{{ $.Title }}"
+      aria-label="Share to Weibo">
+      <span class="share-icon">{{ partial "icon.html" "weibo" }}</span>
+    </a>
+
+    <a
+      href="{{ printf "https://connect.qq.com/widget/shareqq/index.html?url=%s&title=%s&desc=%s&source=%s" $shareURL $shareTitle $shareDesc $shareSource | safeURL }}"
+      target="_blank"
+      rel="noopener noreferrer"
+      title="{{ $.Title }}"
+      aria-label="Share to QQ">
+      <span class="share-icon">{{ partial "icon.html" "qq" }}</span>
+    </a>
+
+    <a
+      href="{{ printf "https://api.qrserver.com/v1/create-qr-code/?size=480x480&data=%s" $shareURL | safeURL }}"
+      target="_blank"
+      rel="noopener noreferrer"
+      title="{{ $.Title }}"
+      aria-label="Share to WeChat">
+      <span class="share-icon">{{ partial "icon.html" "weixin" }}</span>
+    </a>
+  </div>
+{{ end }}

@@ -65,7 +65,16 @@ showCategoryOnly = false
 showAuthorsBadges = false
 showWordCount = false
 showZenMode = false
-sharingLinks = ["twitter", "email"]
+sharingLinks = [
+  "facebook",
+  "twitter",
+  "linkedin",
+  "reddit",
+  "telegram",
+  "whatsapp",
+  "line",
+  "email",
+]
 
 [list]
 showHero = true

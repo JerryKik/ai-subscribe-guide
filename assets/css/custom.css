@@ -241,3 +241,42 @@ body::after {
   border-left-color: rgba(var(--color-primary-500), 0.85);
 }
 
+.share-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 8px;
+  flex-wrap: wrap;
+}
+
+.share-icon {
+  margin: 8px;
+  color: rgb(var(--color-primary-700));
+  position: relative;
+  transition: all 0.2s;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 34px;
+  height: 34px;
+  border-radius: 999px;
+  border: 1px solid rgba(var(--color-primary-400), 0.55);
+  background: rgba(var(--color-primary-100), 0.9);
+}
+
+.share-icon .icon {
+  width: 16px;
+  height: 16px;
+  display: inline-flex;
+}
+
+.share-icon svg {
+  width: 16px;
+  height: 16px;
+  fill: currentColor;
+}
+
+.share-wrapper a:hover .share-icon {
+  transform: scale(1.15);
+}
+
