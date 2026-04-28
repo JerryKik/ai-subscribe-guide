@@ -122,7 +122,7 @@ showDateUpdated: true
 
 如果这里不知道怎么付费，不想折腾，可以用下载好`Shadowrocket`的 apple id 登录进行下载（缺点是无法持续更新，更新软件权限是绑定 apple id），然后提出，注意登录的时候只退出 apple store 的账号，不需要退出设置里面的账号。之后可切回常用 Apple ID，Shadowrocket 通常仍可继续使用。
 
-如果需要点击👉：[**美区 Apple ID**](https://familypro.io/cn/products/apple-id?invite=HJa89c5c&promo=qyyx)
+如果需要点击👉：[**美区 Apple ID**](https://familypro.io/cn/products/apple-id?utm_source=ai-subscribe-guide&invite=HJa89c5c&promo=qyyx)
 
 ### 再次验证
 

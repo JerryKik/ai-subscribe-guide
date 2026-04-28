@@ -28,12 +28,12 @@ images:
 
 价格受汇率、平台成本、优惠码影响会有浮动，建议下单前输入优惠码实时查看。长期套餐（3 个月 / 12 个月）通常更划算，平均每月能省 30–50 元。以下按性价比从高到低排序（优先推荐有 ICP 备案、自动化充值、全程质保的平台）：
 
-### [FamilyPro](https://familypro.io/cn/products/chatgpt-top-up?invite=HJa89c5c&promo=qyyx)（推荐指数: 🌟🌟🌟🌟🌟）
+### [FamilyPro](https://familypro.io/cn/products/chatgpt-top-up?utm_source=ai-subscribe-guide&invite=HJa89c5c&promo=qyyx)（推荐指数: 🌟🌟🌟🌟🌟）
 
 ![FamilyPro recharge guide](/images/chatgpt/familypro-recharge-guide.png)
 
-- **1 个月**：$25.99/月（折合人民币约 177.46 元，视汇率）。
-- **订阅**：$13.00/月（折合人民币约 88.76 元，视汇率）
+- **1个月Pro**：$19.00/月（折合人民币约 129.64 元，视汇率）
+- **折扣(点击👆链接立享)**：$17.10/月（折合人民币约 116.68 元，视汇率）
 
 **特点**：自动化交付，即时到账，无封号风险，支持质保。支持微信、支付宝支付，国内信用卡等多种支付（若无账号也可直接买现成 Plus 账号）。
 
@@ -41,10 +41,7 @@ images:
 
 ![familypro recharge guide](/images/chatgpt/gamsgo-chatgpt-recharge-guide.png)
 
-- **1 个月**：$14.99/月（折合人民币约 102.35 元，视汇率）。
-  ![gamsgo recharge chatgpt 1 month price](/images/chatgpt/gamsgo-chatgpt-1-month-price.png)
-- **订阅**：$9.99/月（折合人民币约 68.21 元，视汇率）
-  ![gamsgo gamsgo chatgpt subscription price](/images/chatgpt/gamsgo-chatgpt-subscription-price.png)
+- **订阅Pro 20x**：$114.99/月（折合人民币约 786.11 元，视汇率）
 
 **特点**：自动化交付，即时到账。支持微信、支付宝支付，国内信用卡等多种支付（若无账号也可直接买现成 Plus 账号）。
 
