@@ -45,7 +45,7 @@ showDateUpdated: true
 
 ## 2026 主流平台快速介绍
 
-- **[FamilyPro](https://familypro.io/cn?utm_source=ai-subscribe-guide&invite=HJa89c5c&promo=qyyx)**：强调售后质保，支持退款与替换承诺较强，品类覆盖广（流媒体 + AI + 办公工具），支持多种支付，信用卡，加密货币，支付宝，微信。
+- **[FamilyPro](https://familypro.io/en/products/chatgpt?utm_source=studentdiscount.io&utm_medium=referral&utm_campaign=hezu&utm_content=pos-middle-01&invite=HJa89c5c&promo=qyyx)**：强调售后质保，支持退款与替换承诺较强，品类覆盖广（流媒体 + AI + 办公工具），支持多种支付，信用卡，加密货币，支付宝，微信。
 - **[GamsGo](https://www.gamsgo.com/zh/)**：国际化平台，品类覆盖广（流媒体 + AI + 办公工具），交付速度快，适合跨区和英文环境用户。
 - **[银河录像局](https://nf.video/K2wPi)**：流媒体 + AI 覆盖完整，售后能力强，适合长期重度用户。
 - **[ihezu（奈飞小铺 / 爱合租）](https://ihezu.ink/H7wrGz)**：运营时间长，主打奈飞拼车，短租与自发车机制灵活，小众服务品类相对丰富。
