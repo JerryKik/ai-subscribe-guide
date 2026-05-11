@@ -28,7 +28,7 @@ images:
 
 价格受汇率、平台成本、优惠码影响会有浮动，建议下单前输入优惠码实时查看。长期套餐（3 个月 / 12 个月）通常更划算，平均每月能省 30–50 元。以下按性价比从高到低排序（优先推荐有 ICP 备案、自动化充值、全程质保的平台）：
 
-### [FamilyPro](https://familypro.io/en/products/chatgpt?utm_source=jerrykik.github.io/ai-subscribe-guide&utm_medium=referral&utm_campaign=chatgpt-plus-dai-chong-jiaocheng-2026&utm_content=pos-top-01&invite=HJa89c5c&promo=qyyx)（推荐指数: 🌟🌟🌟🌟🌟）
+### [FamilyPro](https://familypro.io/en/products/chatgpt-top-up?utm_source=jerrykik.github.io/ai-subscribe-guide&utm_medium=referral&utm_campaign=chatgpt-plus-dai-chong-jiaocheng-2026&utm_content=pos-top-01&invite=HJa89c5c&promo=qyyx)（推荐指数: 🌟🌟🌟🌟🌟）
 
 ![FamilyPro recharge guide](/images/chatgpt/familypro-recharge-guide.png)
 
