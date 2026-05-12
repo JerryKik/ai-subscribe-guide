@@ -108,4 +108,4 @@ google = "8kKaMQqjVAJnBMS4fe0cyu7LbKaOYIaUudXL1inLmGo"
 [analytics]
   [analytics.ga4]
   # Google Analytics 4 Measurement ID, e.g. "G-XXXXXXXXXX"
-  id = ""
+  id = "G-LXJ2JDNKNR"
