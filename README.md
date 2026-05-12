@@ -126,16 +126,25 @@ categories: ["分类"]
 
 ### 5.3 Search Console 与 Analytics
 
-在 `config/_default/params.toml` 中配置：
+两者由 Blowfish 的 `layouts/partials/head.html` 与 `partials/analytics/main.html` 读取，**配置位置不同**（与 Hugo 是否提供内置项有关）：
+
+**Google Search Console（HTML 标签验证）** — 写在 `config/_default/params.toml` 的 `[verification]`，值为 Search Console「HTML 标签」里 `content="..."` 中的字符串：
 
 ```toml
 [verification]
-google = ""
-
-[analytics]
-  [analytics.ga4]
-  id = ""
+google = "你的验证码"
 ```
+
+可选：`bing`、`pinterest`、`yandex`、`fediverse` 等键，与主题 `head` 模板一致。
+
+**Google Analytics 4** — 使用 Hugo 官方 `[services.googleAnalytics]`，写在 `config/_default/hugo.toml`（不要写在 `params.toml` 的 `[analytics.ga4]`，当前主题不会读取）：
+
+```toml
+[services.googleAnalytics]
+id = "G-XXXXXXXXXX"
+```
+
+**本地预览**：主题仅在 **生产环境** 注入 GA 脚本（`hugo.IsProduction`）。默认 `hugo server` 为开发环境，页面里看不到 gtag；需要本地验证时可执行 `hugo server -e production`。正式部署执行 `hugo` 时为生产构建，会包含统计脚本（前提是已配置 `id`）。
 
 ## 6. 新增文章
 

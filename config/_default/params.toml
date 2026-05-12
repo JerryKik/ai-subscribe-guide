@@ -105,7 +105,4 @@ google = "8kKaMQqjVAJnBMS4fe0cyu7LbKaOYIaUudXL1inLmGo"
 # yandex = ""
 # fediverse = ""
 
-[analytics]
-  [analytics.ga4]
-  # Google Analytics 4 Measurement ID, e.g. "G-XXXXXXXXXX"
-  id = "G-LXJ2JDNKNR"
+# GA4：在 config/_default/hugo.toml 中配置 [services.googleAnalytics] id（Blowfish 读取该字段）

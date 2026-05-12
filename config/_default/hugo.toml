@@ -18,3 +18,7 @@ priority = 0.7
 
 [outputs]
 home = ["HTML", "RSS", "JSON"]
+
+# Blowfish `partials/analytics/main.html` 使用 Hugo 内置配置，而非 params.toml 的 [analytics.ga4]
+[services.googleAnalytics]
+id = "G-LXJ2JDNKNR"
