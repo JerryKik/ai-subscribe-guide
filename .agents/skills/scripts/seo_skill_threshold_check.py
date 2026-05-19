@@ -28,6 +28,10 @@ from dataclasses import dataclass
 from pathlib import Path
 from typing import Any, Dict, List, Optional, Pattern, Sequence, Tuple, Union
 
+from seo_scripts_bootstrap import prepend_scripts_venv_site_packages
+
+prepend_scripts_venv_site_packages()
+
 # ---------------------------------------------------------------------------
 # 常量：语言与英文词元
 # ---------------------------------------------------------------------------

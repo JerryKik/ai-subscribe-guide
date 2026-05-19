@@ -58,7 +58,24 @@ python3 .agents/skills/scripts/article_seo_eval.py \
   --file content/articles/your-article.en.md
 ```
 
-Dependencies: `requirements-seo-check.txt` (optional install).
+**Live page checks** (rendered HTML: H1, `<title>`, meta description, canonical, URL slug):
+
+- [CHECK_PAGE_SEO.md](../scripts/CHECK_PAGE_SEO.md)
+
+```bash
+python3 .agents/skills/scripts/check-page.py \
+  https://your-site.example/path/to/article/ \
+  --keyword "primary keyword"
+```
+
+**Frontmatter TD length** (draft, before publish):
+
+```bash
+python3 .agents/skills/scripts/td_frontmatter_check.py \
+  --file content/articles/your-article.en.md
+```
+
+Dependencies: `requirements-seo-check.txt` (`requests` required for `check-page.py`).
 
 **Note:** `seo_skill_threshold_check.py` validates SKILL.md document structure, not article content. Do not use it as an article AI-score checker.
 

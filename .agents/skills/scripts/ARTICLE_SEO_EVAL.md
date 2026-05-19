@@ -126,3 +126,5 @@ python3 -m pip install -r .agents/skills/scripts/requirements-seo-check.txt
 |------|------|------|
 | `seo_skill_threshold_check.py` | `SKILL.md` | 技能文档结构是否合规 |
 | `article_seo_eval.py` | 文章 `.md` | 生成物质量与回归 |
+| `td_frontmatter_check.py` | 文章 frontmatter | TD 长度（40–60 / 140–160） |
+| `check-page.py` | 线上 HTML URL | H1、title、meta、canonical、slug（见 [CHECK_PAGE_SEO.md](./CHECK_PAGE_SEO.md)） |

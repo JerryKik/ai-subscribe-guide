@@ -18,6 +18,10 @@ import sys
 from pathlib import Path
 from typing import Any, Dict, List, Optional, Tuple, Union
 
+from seo_scripts_bootstrap import prepend_scripts_venv_site_packages
+
+prepend_scripts_venv_site_packages()
+
 # ---------------------------------------------------------------------------
 # 与技能脚本一致：可选依赖见 requirements-seo-check.txt
 # - markdown-it-py：CommonMark token 流提取标题（与 seo_skill_threshold_check 一致）
