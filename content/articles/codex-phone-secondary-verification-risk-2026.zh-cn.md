@@ -149,7 +149,9 @@ images:
 ### 4. [bewild-长期有效的手机号套餐](https://bewild.ai/overseas-phone?code=7N2KYJMI)
 ![bewild-长期有效的手机号套餐](/images/chatgpt/bewild-long-term-valid-phone-package.webp)
 ![bewild-长期有效的手机号3个套餐](/images/chatgpt/bewild-long-term-valid-phone-3-package.webp)
-$7.99/月，逾期未付款超过 2 周，号码会被回收。
+如果你嫌弃上面的方案麻烦，可以直接找到一键接入的第三方平台，这里以bewild为例， $7.99/月。
+
+注意⚠️：逾期未付款超过 2 周，号码会被回收。
 
 ## 四、2026 年接码平台现状提醒
 
