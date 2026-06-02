@@ -280,3 +280,87 @@ body::after {
   transform: scale(1.15);
 }
 
+/* Global Markdown Link CTA styling (Clean inline version) */
+.prose p a:not(.anchor):not(.cta-pill):not([class*="button"]),
+.prose li a:not(.anchor):not(.cta-pill):not([class*="button"]),
+.prose h1 a:not(.anchor):not(.cta-pill):not([class*="button"]),
+.prose h2 a:not(.anchor):not(.cta-pill):not([class*="button"]),
+.prose h3 a:not(.anchor):not(.cta-pill):not([class*="button"]),
+.prose h4 a:not(.anchor):not(.cta-pill):not([class*="button"]),
+.prose h5 a:not(.anchor):not(.cta-pill):not([class*="button"]),
+.prose h6 a:not(.anchor):not(.cta-pill):not([class*="button"]) {
+  font-weight: 600;
+  color: rgb(var(--color-primary-600));
+  text-decoration: none !important;
+  border-bottom: 2px solid rgba(var(--color-primary-500), 0.3);
+  transition: all 0.2s ease-in-out;
+  padding-bottom: 1px;
+}
+
+.prose p a:not(.anchor):not(.cta-pill):not([class*="button"]):hover,
+.prose li a:not(.anchor):not(.cta-pill):not([class*="button"]):hover,
+.prose h1 a:not(.anchor):not(.cta-pill):not([class*="button"]):hover,
+.prose h2 a:not(.anchor):not(.cta-pill):not([class*="button"]):hover,
+.prose h3 a:not(.anchor):not(.cta-pill):not([class*="button"]):hover,
+.prose h4 a:not(.anchor):not(.cta-pill):not([class*="button"]):hover,
+.prose h5 a:not(.anchor):not(.cta-pill):not([class*="button"]):hover,
+.prose h6 a:not(.anchor):not(.cta-pill):not([class*="button"]):hover {
+  color: rgb(var(--color-primary-700));
+  border-bottom-color: rgb(var(--color-primary-600));
+  background-color: rgba(var(--color-primary-500), 0.08);
+}
+
+.dark .prose p a:not(.anchor):not(.cta-pill):not([class*="button"]),
+.dark .prose li a:not(.anchor):not(.cta-pill):not([class*="button"]),
+.dark .prose h1 a:not(.anchor):not(.cta-pill):not([class*="button"]),
+.dark .prose h2 a:not(.anchor):not(.cta-pill):not([class*="button"]),
+.dark .prose h3 a:not(.anchor):not(.cta-pill):not([class*="button"]),
+.dark .prose h4 a:not(.anchor):not(.cta-pill):not([class*="button"]),
+.dark .prose h5 a:not(.anchor):not(.cta-pill):not([class*="button"]),
+.dark .prose h6 a:not(.anchor):not(.cta-pill):not([class*="button"]) {
+  color: rgb(var(--color-primary-400));
+  border-bottom-color: rgba(var(--color-primary-400), 0.3);
+}
+
+.dark .prose p a:not(.anchor):not(.cta-pill):not([class*="button"]):hover,
+.dark .prose li a:not(.anchor):not(.cta-pill):not([class*="button"]):hover,
+.dark .prose h1 a:not(.anchor):not(.cta-pill):not([class*="button"]):hover,
+.dark .prose h2 a:not(.anchor):not(.cta-pill):not([class*="button"]):hover,
+.dark .prose h3 a:not(.anchor):not(.cta-pill):not([class*="button"]):hover,
+.dark .prose h4 a:not(.anchor):not(.cta-pill):not([class*="button"]):hover,
+.dark .prose h5 a:not(.anchor):not(.cta-pill):not([class*="button"]):hover,
+.dark .prose h6 a:not(.anchor):not(.cta-pill):not([class*="button"]):hover {
+  color: rgb(var(--color-primary-300));
+  border-bottom-color: rgb(var(--color-primary-400));
+  background-color: rgba(var(--color-primary-400), 0.12);
+}
+
+/* Add an external link arrow to indicate clickability (CTA signal) */
+.prose p a[href^="http"]:not(.anchor):not(.cta-pill):not([class*="button"])::after,
+.prose li a[href^="http"]:not(.anchor):not(.cta-pill):not([class*="button"])::after,
+.prose h1 a[href^="http"]:not(.anchor):not(.cta-pill):not([class*="button"])::after,
+.prose h2 a[href^="http"]:not(.anchor):not(.cta-pill):not([class*="button"])::after,
+.prose h3 a[href^="http"]:not(.anchor):not(.cta-pill):not([class*="button"])::after,
+.prose h4 a[href^="http"]:not(.anchor):not(.cta-pill):not([class*="button"])::after,
+.prose h5 a[href^="http"]:not(.anchor):not(.cta-pill):not([class*="button"])::after,
+.prose h6 a[href^="http"]:not(.anchor):not(.cta-pill):not([class*="button"])::after {
+  content: "↗";
+  display: inline-block;
+  margin-left: 0.15em;
+  font-size: 0.9em;
+  font-weight: normal;
+  opacity: 0.8;
+  transition: transform 0.2s ease;
+}
+
+.prose p a[href^="http"]:not(.anchor):not(.cta-pill):not([class*="button"]):hover::after,
+.prose li a[href^="http"]:not(.anchor):not(.cta-pill):not([class*="button"]):hover::after,
+.prose h1 a[href^="http"]:not(.anchor):not(.cta-pill):not([class*="button"]):hover::after,
+.prose h2 a[href^="http"]:not(.anchor):not(.cta-pill):not([class*="button"]):hover::after,
+.prose h3 a[href^="http"]:not(.anchor):not(.cta-pill):not([class*="button"]):hover::after,
+.prose h4 a[href^="http"]:not(.anchor):not(.cta-pill):not([class*="button"]):hover::after,
+.prose h5 a[href^="http"]:not(.anchor):not(.cta-pill):not([class*="button"]):hover::after,
+.prose h6 a[href^="http"]:not(.anchor):not(.cta-pill):not([class*="button"]):hover::after {
+  transform: translate(2px, -2px);
+  opacity: 1;
+}
