@@ -1,6 +1,7 @@
 ---
 title: "发文基线说明（站点维护用）"
 description: "AI 订阅攻略站的文章 frontmatter、分类标签和 shortcodes 使用规范。"
+summary: "AI 订阅攻略站的文章 frontmatter、分类标签和 shortcodes 使用规范。"
 date: 2026-04-10
 lastmod: 2026-04-10
 draft: true
