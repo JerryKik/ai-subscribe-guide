@@ -99,6 +99,38 @@ cardView = true
 
 常用 `layout`：`hero`、`card`、`page`、`profile`。
 
+### 4.2 首页翻页（Pagination）
+
+**每页文章数** 由 `config/_default/hugo.toml` 的 `[pagination]` 控制：
+
+```toml
+[pagination]
+pagerSize = 12
+```
+
+> **注意**：Blowfish 的 `hero` / `page` 等首页布局默认使用 `showRecentItems` 截断文章数量，**不会触发翻页**。
+>
+> 本项目已通过覆盖 `layouts/partials/home/hero.html`，将文章列表改为 Hugo 原生 Paginator 实现，首页可正常翻页。
+>
+> 若后续升级主题或切换布局，需确认对应的 `layouts/partials/home/<layout>.html` 覆盖文件是否仍使用 `.Paginate` + `{{ partial "pagination.html" . }}` 的写法；否则翻页会失效。
+
+**覆盖文件位置**：`layouts/partials/home/hero.html`
+
+关键改动：
+
+```html
+<!-- 1. 在模板顶部初始化 Paginator，替代 showRecentItems 截断 -->
+{{ $paginator := .Paginate (where .Site.RegularPages "Type" "in" .Site.Params.mainSections) }}
+
+<!-- 2. 渲染当前页文章 -->
+{{ range $paginator.Pages }}
+  {{ partial "article-link/card.html" . }}
+{{ end }}
+
+<!-- 3. 渲染翻页控件 -->
+{{ partial "pagination.html" . }}
+```
+
 ## 5. SEO 配置
 
 ### 5.1 全站基础 SEO

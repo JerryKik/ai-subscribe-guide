@@ -1,5 +1,6 @@
 {{ $disableImageOptimization := .Site.Params.disableImageOptimization | default false }}
 {{ $disableHeroImageFilter := .Site.Params.homepage.disableHeroImageFilter | default false }}
+{{ $paginator := .Paginate (where .Site.RegularPages "Type" "in" .Site.Params.mainSections) }}
 <article class="max-w-full prose dark:prose-invert">
   <div class="relative">
     <div class="absolute inset-x-0 bottom-0 h-1/2"></div>
@@ -125,5 +126,11 @@
   </div>
 </article>
 <section>
-  {{ partial "recent-articles/main.html" . }}
+  <h2 class="mt-8 text-2xl font-extrabold mb-10">{{ i18n "shortcode.recent_articles" | emojify }}</h2>
+  <section class="w-full grid gap-4 sm:grid-cols-2 md:grid-cols-3">
+    {{ range $paginator.Pages }}
+      {{ partial "article-link/card.html" . }}
+    {{ end }}
+  </section>
+  {{ partial "pagination.html" . }}
 </section>
