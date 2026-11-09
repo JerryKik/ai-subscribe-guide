@@ -31,6 +31,11 @@ This template is designed for quickly building a **Hugo + Blowfish** multilingua
 - **Languages**: `config/_default/languages.*.toml`
 - **Custom styling**: `assets/css/custom.css` and `assets/css/schemes/*.css`
 
+## Images
+
+- The user supplies final image files (already in webp). Copy them into `assets/images/` as-is.
+- Do not convert, re-encode, or recompress images (no `cwebp`, `sips`, etc.); each lossy pass visibly degrades text in covers.
+
 ## Build validation
 
 ```bash
