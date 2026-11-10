@@ -5,6 +5,8 @@
   {{ $color = "border-red-400 bg-red-50 text-red-900 dark:bg-red-950 dark:text-red-100 dark:border-red-700" }}
 {{ else if eq $level "info" }}
   {{ $color = "border-sky-400 bg-sky-50 text-sky-900 dark:bg-sky-950 dark:text-sky-100 dark:border-sky-700" }}
+{{ else if eq $level "promo" }}
+  {{ $color = "callout-promo" }}
 {{ end }}
 <div class="my-5 rounded-lg border p-4 {{ $color }}">
   <p class="mb-2 font-semibold">{{ $title }}</p>

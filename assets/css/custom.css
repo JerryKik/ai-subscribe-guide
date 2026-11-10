@@ -364,3 +364,131 @@ body::after {
   transform: translate(2px, -2px);
   opacity: 1;
 }
+
+/* Promo callout (warning-box level="promo"); Tailwind color utilities in the shortcode are not compiled by the theme */
+.callout-promo {
+  border: 2px solid #f59e0b;
+  border-left-width: 6px;
+  background: linear-gradient(135deg, #fffbeb 0%, #fef3c7 100%);
+  color: #78350f;
+}
+
+.callout-promo > p:first-child {
+  font-size: 1.05rem;
+  color: #b45309;
+}
+
+.callout-promo strong {
+  color: #b91c1c;
+}
+
+.callout-promo code {
+  padding: 0.1em 0.45em;
+  border: 1px dashed #dc2626;
+  border-radius: 0.25rem;
+  background: #fff;
+  color: #dc2626;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+}
+
+.callout-promo code::before,
+.callout-promo code::after {
+  content: none;
+}
+
+html.dark .callout-promo {
+  border-color: #d97706;
+  background: linear-gradient(135deg, #451a03 0%, #3b2006 100%);
+  color: #fde68a;
+}
+
+html.dark .callout-promo > p:first-child {
+  color: #fbbf24;
+}
+
+html.dark .callout-promo strong {
+  color: #fca5a5;
+}
+
+html.dark .callout-promo code {
+  background: #1c1917;
+  border-color: #f87171;
+  color: #fca5a5;
+}
+
+/* Click-to-copy promo code (shortcode copy-code) */
+.copy-code {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4em;
+  margin: 0 0.15em;
+  padding: 0.05em 0.5em;
+  border: 1px dashed #dc2626;
+  border-radius: 0.3rem;
+  background: #fff;
+  color: #dc2626;
+  font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  line-height: 1.6;
+  cursor: pointer;
+  vertical-align: baseline;
+  transition: background 0.15s ease;
+}
+
+.copy-code:hover {
+  background: #fef2f2;
+}
+
+.copy-code__hint {
+  font-family: inherit;
+  font-size: 0.75em;
+  font-weight: 500;
+  letter-spacing: 0;
+  color: #9ca3af;
+}
+
+.copy-code.is-copied {
+  border-style: solid;
+  border-color: #16a34a;
+  color: #16a34a;
+}
+
+.copy-code.is-copied .copy-code__hint {
+  font-size: 0;
+}
+
+.copy-code.is-copied .copy-code__hint::before {
+  content: "✓ 已复制";
+  font-size: 0.75rem;
+  color: #16a34a;
+}
+
+html.dark .copy-code {
+  background: #1c1917;
+  border-color: #f87171;
+  color: #fca5a5;
+}
+
+#copy-code-toast {
+  position: fixed;
+  left: 50%;
+  bottom: 2rem;
+  z-index: 1000;
+  padding: 0.6rem 1.1rem;
+  border-radius: 0.5rem;
+  background: rgba(17, 24, 39, 0.92);
+  color: #fff;
+  font-size: 0.9rem;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+  opacity: 0;
+  pointer-events: none;
+  transform: translate(-50%, 0.5rem);
+  transition: opacity 0.2s ease, transform 0.2s ease;
+}
+
+#copy-code-toast.is-visible {
+  opacity: 1;
+  transform: translate(-50%, 0);
+}

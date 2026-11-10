@@ -1,0 +1,61 @@
+<script>
+  (function () {
+    // Synchronous copy first: the async Clipboard API rejects when the document lacks focus (in-app webviews).
+    function fallbackCopy(text) {
+      var ta = document.createElement("textarea");
+      ta.value = text;
+      ta.setAttribute("readonly", "");
+      ta.style.position = "fixed";
+      ta.style.opacity = "0";
+      document.body.appendChild(ta);
+      ta.select();
+      var ok = false;
+      try {
+        ok = document.execCommand("copy");
+      } catch (e) {}
+      document.body.removeChild(ta);
+      return ok;
+    }
+
+    var toastTimer;
+    function toast(message) {
+      var el = document.getElementById("copy-code-toast");
+      if (!el) {
+        el = document.createElement("div");
+        el.id = "copy-code-toast";
+        el.setAttribute("role", "status");
+        el.setAttribute("aria-live", "polite");
+        document.body.appendChild(el);
+      }
+      el.textContent = message;
+      el.classList.add("is-visible");
+      clearTimeout(toastTimer);
+      toastTimer = setTimeout(function () {
+        el.classList.remove("is-visible");
+      }, 2200);
+    }
+
+    document.addEventListener("click", function (event) {
+      var btn = event.target.closest(".copy-code");
+      if (!btn) return;
+      var code = btn.getAttribute("data-copy");
+      var done = function () {
+        btn.classList.add("is-copied");
+        setTimeout(function () {
+          btn.classList.remove("is-copied");
+        }, 2200);
+        toast("已复制优惠码 " + code + "，结算时粘贴即可");
+      };
+      var fail = function () {
+        toast("复制失败，请手动复制：" + code);
+      };
+      if (fallbackCopy(code)) {
+        done();
+      } else if (navigator.clipboard && window.isSecureContext) {
+        navigator.clipboard.writeText(code).then(done, fail);
+      } else {
+        fail();
+      }
+    });
+  })();
+</script>

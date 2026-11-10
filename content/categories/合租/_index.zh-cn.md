@@ -3,8 +3,8 @@ title: "合租"
 description: "整理 2026 年主流订阅合租平台最新信息，覆盖 Netflix、Disney+、YouTube Premium、Spotify、ChatGPT Plus、Claude、Gemini Pro 等服务，从价格、稳定性、售后和合规风险四个维度给出可执行的选购建议。"
 layout: single
 date: 2026-04-10
-lastmod: 2026-04-11
-updatedDate: 2026-04-11
+lastmod: 2026-11-10
+updatedDate: 2026-11-10
 summary: "面向新手和长期用户的合租平台对比：先看模式，再按目标筛选平台，最后用避坑清单降低翻车风险。"
 tags: ["合租平台", "Netflix合租", "ChatGPT Plus共享", "订阅共享"]
 categories: ["合租"]
@@ -18,6 +18,20 @@ showDateUpdated: true
 {{< warning-box title="合规与风控提醒（先看）" level="danger" >}}
 这类共享模式通常不符合原平台 ToS，存在封号、二验、地区限制、车位回收等风险。  
 建议优先选有 ICP 备案、运营时间长、售后公开的平台，并先月付测试 1-2 个周期。
+{{< /warning-box >}}
+
+{{< warning-box title="EZsub 当前优惠码：XK135M" level="promo" >}}
+**[EZsub](https://www.ezsub.com/zh-cn)** — ChatGPT、Claude、Gemini AI 订阅 / 额度稳定充值！新用户 ChatGPT Plus **139 元起**。
+
+结算时填写优惠码 {{< copy-code "XK135M" >}}，系统提示「有效的优惠码」即生效。2026-11-10 实测：原价 **¥149.00** 的订单，优惠 **-¥11.92**，实付 **¥137.08**。
+
+实际折扣以结算页显示为准。
+{{< /warning-box >}}
+
+{{< warning-box title="双 11 活动：FamilyPro 全站 5% OFF" level="promo" >}}
+**[FamilyPro](https://familypro.io/?utm_source=jerrykik.github.io/ai-subscribe-guide&utm_medium=referral&utm_campaign=hezu&utm_content=pos-promo-double11&invite=HJa89c5c&promo=qyyx)** Double 11 Discount：全站优惠券 **5% OFF**，另有两张 **3% OFF** 全站券。
+
+打开官网首页会弹出「DOUBLE 11 CELEBRATION」活动窗口，点 **Claim now** 领取优惠券，下单时使用。2026-11-10 实测可领，活动截止时间以官网为准。
 {{< /warning-box >}}
 
 {{< steps-card step="1" title="先定目标：你更看重价格还是稳定性" tip="先决定主需求，再选平台" >}}
@@ -45,8 +59,8 @@ showDateUpdated: true
 
 ## 2026 主流平台快速介绍
 
-- **[FamilyPro](https://familypro.io/?utm_source=jerrykik.github.io/ai-subscribe-guide&utm_medium=referral&utm_campaign=hezu&utm_content=pos-middle-01&invite=HJa89c5c&promo=qyyx)**：强调售后质保，支持退款与替换承诺较强，品类覆盖广（流媒体 + AI + 办公工具），支持多种支付，信用卡，加密货币，支付宝，微信。
-- **[GamsGo](https://www.gamsgo.com/zh/)**：国际化平台，品类覆盖广（流媒体 + AI + 办公工具），交付速度快，适合跨区和英文环境用户。
+- **[EZsub](https://www.ezsub.com/zh-cn)**：ChatGPT、Claude、Gemini AI 订阅 / 额度稳定充值！新用户 ChatGPT Plus **139 元起**，当前优惠码：{{< copy-code "XK135M" >}}。ChatGPT 支持自助充值到自己账号，不用提供密码；同时覆盖 Netflix、YouTube Premium、Spotify 等流媒体，支持支付宝、微信付款。
+- **[FamilyPro](https://familypro.io/?utm_source=jerrykik.github.io/ai-subscribe-guide&utm_medium=referral&utm_campaign=hezu&utm_content=pos-middle-01&invite=HJa89c5c&promo=qyyx)**：**双 11 活动进行中，全站 5% OFF 优惠券可领**。强调售后质保，支持退款与替换承诺较强，品类覆盖广（流媒体 + AI + 办公工具），支持多种支付，信用卡，加密货币，支付宝，微信。
 - **[银河录像局](https://nf.video/K2wPi)**：流媒体 + AI 覆盖完整，售后能力强，适合长期重度用户。
 - **[ihezu（奈飞小铺 / 爱合租）](https://ihezu.ink/H7wrGz)**：运营时间长，主打奈飞拼车，短租与自发车机制灵活，小众服务品类相对丰富。
 - **[星际放映厅](https://naifeistation.com/)**：自动化交付 + 独立车位路线，流媒体与 AI 配置均衡。
@@ -54,12 +68,16 @@ showDateUpdated: true
 - **[飞行派](https://spotifyzc.com/?incode=QHkrSQ)**：界面和流程偏新手友好，月付门槛低，适合先试后续费。
 - **[账号星球](https://accountboy.com/)**：更偏独立账号购买与批发，不是典型合租。
 - **[蜜糖商店（MetShop）](https://metshop.cn?referrerUserNo=MTUN9LBCURAJ)**：主推 Netflix、Spotify、Hulu、YouTube 等流媒体服务。
+- **[银河拼车](https://galaxyshare.top/?ref=JWWQBW)**：专做 ChatGPT Plus，提供多人共享和独享两种方案（和上面的银河录像局不是同一家）。
+- **[云端小铺](https://ycloudshop.com/r/7hnt)**：主打 AI 工具，覆盖 ChatGPT、Claude、Gemini、Grok、Cursor 等账号与会员充值，自助下单，按商品自动发货或人工处理。
+- **[声田合租](https://hezu.life?from=10609)**：专做 Spotify 合租 / 拼车，会员方案可选，适合只想听歌的用户。
+- **[GamsGo](https://www.gamsgo.com/zh/)**：国际化平台，品类覆盖广（流媒体 + AI + 办公工具），交付速度快，适合跨区和英文环境用户。
 
 ## 平台对比一览（2026）
 
 | 平台           | 主要优势                    | 主要劣势                                                       | 适合人群                   | 稳定/售后 |
 | -------------- | --------------------------- | -------------------------------------------------------------- | -------------------------- | --------- |
-| **GamsGo**     | 国际友好、交付快、覆盖广    | 部分用户反馈卖号风险                                           | 想一次买齐多种服务         | 中等      |
+| **EZsub**      | AI 充值全、ChatGPT 自助充值不交密码、支付宝/微信 | Claude 充值后官方会触发 KYC，需自己过验证 | ChatGPT / Claude / Gemini 充值 | 高 |
 | **FamilyPro**  | 退款/替换保障强             | 部分超低价产品经常缺货，需要抢，网站较新                       | 风险敏感，免费 AI 在线工具 | 高        |
 | **银河录像局** | 品类全、用户多、售后强      | 热门车位需抢                                                   | 长期重度（追剧 + AI）      | 高        |
 | **奈飞小铺**   | 运营久、短租灵活、自发车    | 界面较老，部分服务体验波动（2026，网友评论售后不满，疑似跑路） | 想要灵活租期用户           | 高        |
@@ -68,13 +86,19 @@ showDateUpdated: true
 | **环球巴士**   | 价格低、运营久、品类多      | 部分账号有地区限制                                             | 流媒体优先、追求性价比     | 高        |
 | **飞行派**     | 月付友好、上手简单          | 规模略小于头部平台                                             | 新手、短期测试             | 高        |
 | **账号星球**   | 独立账号/批发能力强         | 非纯合租，价格偏高                                             | 独享或批量采购需求         | 中高      |
+| **银河拼车**   | 专注 ChatGPT Plus，共享/独享可选 | 品类单一，新收录，口碑待观察                              | 只想低价用 ChatGPT Plus    | 待观察    |
+| **云端小铺**   | AI 品类多（含 Grok、Cursor） | 新收录，口碑待观察                                            | 多个 AI 工具一起买         | 待观察    |
+| **声田合租**   | 专注 Spotify，方案可选      | 只有 Spotify                                                   | 只需要 Spotify             | 待观察    |
+| **GamsGo**     | 国际友好、交付快、覆盖广    | 部分用户反馈卖号风险                                           | 想一次买齐多种服务         | 中等      |
 
 ## 选购建议（仅供参考）
 
 - **求稳 + 求全**：优先看 `银河录像局`、`FamilyPro`
 - **最低价流媒体**：优先看 `环球巴士`、`FamilyPro`、`GamsGo`
 - **新手或短期试水**：优先看 `飞行派`、`奈飞小铺`、`GamsGo`
-- **AI工具**：优先看 `FamilyPro`、`GamsGo`
+- **AI工具**：优先看 `EZsub`（优惠码 {{< copy-code "XK135M" >}}）、`FamilyPro`、`云端小铺`、`GamsGo`
+- **只要 ChatGPT Plus 拼车**：看 `银河拼车`
+- **只要 Spotify**：看 `声田合租`
 - **需要独享账号**：补充看 `星际放映厅``账号星球`
 - **各种账号**： 优先`账号星球`
 
