@@ -9,3 +9,5 @@ _vendor/
 
 # SEO 脚本本地 venv（requirements-seo-check.txt）
 .agents/skills/scripts/.venv/
+
+.vscode/
