@@ -3,8 +3,8 @@ title: "合租"
 description: "整理 2026 年主流订阅合租平台最新信息，覆盖 Netflix、Disney+、YouTube Premium、Spotify、ChatGPT Plus、Claude、Gemini Pro 等服务，从价格、稳定性、售后和合规风险四个维度给出可执行的选购建议。"
 layout: single
 date: 2026-04-10
-lastmod: 2026-11-10
-updatedDate: 2026-11-10
+lastmod: 2026-11-12
+updatedDate: 2026-11-12
 summary: "面向新手和长期用户的合租平台对比：先看模式，再按目标筛选平台，最后用避坑清单降低翻车风险。"
 tags: ["合租平台", "Netflix合租", "ChatGPT Plus共享", "订阅共享"]
 categories: ["合租"]
@@ -21,17 +21,17 @@ showDateUpdated: true
 {{< /warning-box >}}
 
 {{< warning-box title="EZsub 当前优惠码：XK135M" level="promo" >}}
-**[EZsub](https://www.ezsub.com/zh-cn)** — ChatGPT、Claude、Gemini AI 订阅 / 额度稳定充值！新用户 ChatGPT Plus **139 元起**。
+**[EZsub](https://ezsubaetn.ezsub.com/)** — ChatGPT、Claude、Gemini AI 订阅 / 额度稳定充值！新用户 ChatGPT Plus **139 元起**。
 
 结算时填写优惠码 {{< copy-code "XK135M" >}}，系统提示「有效的优惠码」即生效。2026-11-10 实测：原价 **¥149.00** 的订单，优惠 **-¥11.92**，实付 **¥137.08**。
 
 实际折扣以结算页显示为准。
 {{< /warning-box >}}
 
-{{< warning-box title="双 11 活动：FamilyPro 全站 5% OFF" level="promo" >}}
-**[FamilyPro](https://familypro.io/?utm_source=jerrykik.github.io/ai-subscribe-guide&utm_medium=referral&utm_campaign=hezu&utm_content=pos-promo-double11&invite=HJa89c5c&promo=qyyx)** Double 11 Discount：全站优惠券 **5% OFF**，另有两张 **3% OFF** 全站券。
+{{< warning-box title="账号星球当前促销码：DEZC6A" level="promo" >}}
+**[账号星球](https://accdcep.acceboy.com/)** — 更偏独立账号购买与批发。
 
-打开官网首页会弹出「DOUBLE 11 CELEBRATION」活动窗口，点 **Claim now** 领取优惠券，下单时使用。2026-11-10 实测可领，活动截止时间以官网为准。
+结算时填写促销码 {{< copy-code "DEZC6A" >}}。实际折扣以结算页显示为准。
 {{< /warning-box >}}
 
 {{< steps-card step="1" title="先定目标：你更看重价格还是稳定性" tip="先决定主需求，再选平台" >}}
@@ -59,14 +59,14 @@ showDateUpdated: true
 
 ## 2026 主流平台快速介绍
 
-- **[EZsub](https://www.ezsub.com/zh-cn)**：ChatGPT、Claude、Gemini AI 订阅 / 额度稳定充值！新用户 ChatGPT Plus **139 元起**，当前优惠码：{{< copy-code "XK135M" >}}。ChatGPT 支持自助充值到自己账号，不用提供密码；同时覆盖 Netflix、YouTube Premium、Spotify 等流媒体，支持支付宝、微信付款。
-- **[FamilyPro](https://familypro.io/?utm_source=jerrykik.github.io/ai-subscribe-guide&utm_medium=referral&utm_campaign=hezu&utm_content=pos-middle-01&invite=HJa89c5c&promo=qyyx)**：**双 11 活动进行中，全站 5% OFF 优惠券可领**。强调售后质保，支持退款与替换承诺较强，品类覆盖广（流媒体 + AI + 办公工具），支持多种支付，信用卡，加密货币，支付宝，微信。
+- **[EZsub](https://ezsubaetn.ezsub.com/)**：ChatGPT、Claude、Gemini AI 订阅 / 额度稳定充值！新用户 ChatGPT Plus **139 元起**，当前优惠码：{{< copy-code "XK135M" >}}。ChatGPT 支持自助充值到自己账号，不用提供密码；同时覆盖 Netflix、YouTube Premium、Spotify 等流媒体，支持支付宝、微信付款。
+- **[FamilyPro](https://familypro.io/?utm_source=jerrykik.github.io/ai-subscribe-guide&utm_medium=referral&utm_campaign=hezu&utm_content=pos-middle-01&invite=HJa89c5c&promo=qyyx)**：强调售后质保，支持退款与替换承诺较强，品类覆盖广（流媒体 + AI + 办公工具），支持多种支付，信用卡，加密货币，支付宝，微信。
 - **[银河录像局](https://nf.video/K2wPi)**：流媒体 + AI 覆盖完整，售后能力强，适合长期重度用户。
 - **[ihezu（奈飞小铺 / 爱合租）](https://ihezu.ink/H7wrGz)**：运营时间长，主打奈飞拼车，短租与自发车机制灵活，小众服务品类相对丰富。
 - **[星际放映厅](https://naifeistation.com/)**：自动化交付 + 独立车位路线，流媒体与 AI 配置均衡。
 - **[环球巴士](https://universalbus.cn/?s=WCMUWowiQ6)**：老牌且价格竞争力突出，流媒体品类多，常见活动价偏低。
 - **[飞行派](https://spotifyzc.com/?incode=QHkrSQ)**：界面和流程偏新手友好，月付门槛低，适合先试后续费。
-- **[账号星球](https://accountboy.com/)**：更偏独立账号购买与批发，不是典型合租。
+- **[账号星球](https://accdcep.acceboy.com/)**：更偏独立账号购买与批发，不是典型合租。当前促销码：{{< copy-code "DEZC6A" >}}。
 - **[蜜糖商店（MetShop）](https://metshop.cn?referrerUserNo=MTUN9LBCURAJ)**：主推 Netflix、Spotify、Hulu、YouTube 等流媒体服务。
 - **[银河拼车](https://galaxyshare.top/?ref=JWWQBW)**：专做 ChatGPT Plus，提供多人共享和独享两种方案（和上面的银河录像局不是同一家）。
 - **[云端小铺](https://ycloudshop.com/r/7hnt)**：主打 AI 工具，覆盖 ChatGPT、Claude、Gemini、Grok、Cursor 等账号与会员充值，自助下单，按商品自动发货或人工处理。
