@@ -11,6 +11,7 @@ tags: ["ChatGPT充值", "ChatGPT", "订阅"]
 categories: ["教程"]
 robots: "index,follow,max-image-preview:large"
 featureimage: "images/chatgpt/chatgpt-price.webp"
+alt: "ChatGPT 官方价格页截图：Free、Go、Plus、Pro 四档个人套餐对比"
 showHero: true
 heroStyle: "basic"
 showSummary: true

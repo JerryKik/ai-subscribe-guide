@@ -4,13 +4,14 @@ headline: "ChatGPT Plus 可以几人共享？风险、限制与合租拼车全�
 description: "2026年11月更新：ChatGPT Plus能几人共享？结合OpenAI账户共享政策、11月停号潮、单卡单设备订阅上限与12月ChatGPT和Codex共用额度，讲清合租封号风险，并对比Free、Go、Plus与Pro 100/200/500权益，给出更稳妥的订阅选择与代充建议。"
 summary: "ChatGPT Plus能不能几人共享？官方明确禁止共享账号凭证，2026年11月又多了停号潮、单卡单设备付费订阅上限，12月起ChatGPT和Codex还要共用一份额度。本文讲清合租现在的真实风险和人数上限，并按最新GPT-6权益对比Free、Go、Plus与Pro 100/200/500，帮你判断该买哪一档。"
 date: 2026-05-22
-lastmod: 2026-11-11
-updatedDate: 2026-11-11
+lastmod: 2026-11-16
+updatedDate: 2026-11-16
 translationKey: "chatgpt-plus-shared-account-risks-limits-guide-2026"
 tags: ["ChatGPT充值", "合租"]
 categories: ["合租"]
 robots: "index,follow,max-image-preview:large"
 featureimage: "images/chatgpt/chatgpt-price.webp"
+alt: "ChatGPT 官方价格页截图：Free、Go、Plus、Pro 四档个人套餐对比"
 showHero: true
 heroStyle: "basic"
 showSummary: true
